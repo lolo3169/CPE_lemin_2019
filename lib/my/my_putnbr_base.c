@@ -6,7 +6,9 @@
 */
 
 #include <unistd.h>
+
 void my_putchar(char c);
+
 int my_strlen(const char *str);
 
 int my_putnbr_base(int nbr, char const *base)

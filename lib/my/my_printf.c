@@ -22,7 +22,7 @@ int flag(va_list ap, const char *format, int count)
             my_putchar(va_arg(ap, int));
             break;
         case 's':
-            my_putstr(va_arg(ap, char*));
+            my_putstr(va_arg(ap, char *));
             break;
         default:
             return (84);

@@ -13,6 +13,6 @@ int main(void)
 
     result = search_open();
     if (result == 84)
-        my_printf("Error\n");
-    return (result);
+        return (result);
+    return (0);
 }

@@ -10,7 +10,7 @@
 int search_open(void)
 {
     int nb_line = 0;
-    size_t read = 0;
+    ssize_t read;
     size_t len = 0;
     char *line = NULL;
     char *str = NULL;
@@ -45,7 +45,7 @@ char **allocation(char **arr, char *str, int nb_line)
     int j = 0;
     int k = 1;
 
-    arr = malloc(sizeof(char*) * (nb_line + 1));
+    arr = malloc(sizeof(char *) * (nb_line + 1));
     for (int l = 0; l != nb_line; l++)
         arr[l] = '\0';
     for (int s = 0; str[s] != '\0'; s++, k++) {

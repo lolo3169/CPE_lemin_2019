@@ -28,7 +28,6 @@ OBJS_TASK02	= $(SRCS_TASK02:.c=.o)
 
 
 all: $(LIB)
-	 
 $(LIB): $(LIBOBJS)
 	 ar rcs $(LIBPATH)/libmy.a $(LIBOBJS)
 clean:
