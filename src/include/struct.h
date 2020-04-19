@@ -9,8 +9,7 @@
 #define LEM_IN_H_
 
 //struct
-typedef struct element
-{
+typedef struct element {
     int nb_node;
     char node;
     int path_size;
@@ -20,8 +19,7 @@ typedef struct element
     struct element *next;
 } element_t;
 
-typedef struct list
-{
+typedef struct list {
     element_t *first;
 } list_t;
 

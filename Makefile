@@ -13,7 +13,7 @@ LIB	=	lib
 
 LIBDIR	=	./lib/my
 
-all: $(LIB) $(SRC)
+all: $(LIB) $(SRC) clean
 
 $(LIB):
 	$(MAKE) -C $(LIBDIR)

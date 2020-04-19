@@ -21,7 +21,7 @@ CFLAGS += -W -Wall -Wextra -pedantic
 LDFLAGS += -I./include -L../lib/my -lmy
 DEBUGFLAGS = -g3
 
-all: $(NAME)
+all: $(NAME) clean
 
 $(NAME): $(OBJS)
 	 $(CC) $(OBJS) -o $(NAME) $(CFLAGS) $(LDFLAGS)
